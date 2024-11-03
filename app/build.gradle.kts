@@ -4,7 +4,9 @@ plugins {
 
 android {
     namespace = "com.example.superquiz"
-    compileSdk = 34
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
+
 
     defaultConfig {
         applicationId = "com.example.superquiz"
@@ -14,6 +16,7 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -32,7 +35,10 @@ android {
     buildFeatures{
         viewBinding = true
     }
+
+
 }
+
 
 dependencies {
 
