@@ -1,4 +1,4 @@
-package com.example.superquiz;
+package com.example.superquiz.ui.welcome;
 
 import android.os.Bundle;
 
@@ -14,7 +14,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.superquiz.R;
 import com.example.superquiz.databinding.FragmentWelcomeBinding;
+import com.example.superquiz.ui.quiz.QuizFragment;
 
 public class WelcomeFragment extends Fragment {
     public static WelcomeFragment newInstance() {

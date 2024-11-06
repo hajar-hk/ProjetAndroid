@@ -20,6 +20,7 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:text="Question ?"
         tools:text="Question ?" />
 
     <Button
@@ -33,6 +34,7 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         android:backgroundTint="#6200EE"
+        android:text="Answer 1"
         tools:text="Answer1" />
 
     <Button
@@ -46,6 +48,7 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         android:backgroundTint="#6200EE"
+        android:text="Answer 2"
         tools:text="Answer2" />
 
     <Button
@@ -59,6 +62,7 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         android:backgroundTint="#6200EE"
+        android:text="Answer 3"
         tools:text="Answer3" />
 
     <Button
@@ -72,6 +76,7 @@
         android:textSize="20sp"
         android:textColor="@color/white"
         android:backgroundTint="#6200EE"
+        android:text="Answer 4"
         tools:text="Answer4" />
 
     <LinearLayout
@@ -89,6 +94,7 @@
             android:layout_margin="8dp"
             android:padding="16dp"
             android:textSize="18sp"
+            android:text="💪 Good Answer !"
             tools:text="💪 Good Answer !"
             android:textAlignment="textEnd"
             android:visibility="invisible"
@@ -105,5 +111,7 @@
             android:visibility="invisible"
             tools:visibility="visible"/>
     </LinearLayout>
+
+
 
 </LinearLayout>
