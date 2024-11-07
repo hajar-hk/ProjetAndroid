@@ -90,9 +90,9 @@ public class WelcomeFragment extends Fragment {
 
     }
 
-    @Override
-    public void onStart() {
-        super.onStart();
-        binding.playButton.setEnabled(false);  // désactiver le bouton de l'interface
-    }
+    //@Override
+    //public void onStart() {
+        //super.onStart();
+       // binding.playButton.setEnabled(false);  // désactiver le bouton de l'interface
+    //}
 }

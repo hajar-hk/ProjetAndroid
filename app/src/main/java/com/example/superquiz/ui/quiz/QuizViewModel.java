@@ -24,7 +24,7 @@ public class QuizViewModel  extends ViewModel {
     MutableLiveData<Question> currentQuestion = new MutableLiveData<Question>();
 
     // etat: un bool si user est arrivé à la dernière questiion , initialiser a faux
-    MutableLiveData<Boolean> isLastquestion = new MutableLiveData<Boolean>(false);
+    MutableLiveData<Boolean> isLastQuestion = new MutableLiveData<Boolean>(false);
 
     // etat : score initialisé a 0
     MutableLiveData<Integer> score = new MutableLiveData<Integer>(0);
@@ -52,7 +52,7 @@ public class QuizViewModel  extends ViewModel {
     }
 
     // la fonction NextQuestion
-    public void NextQuestion(){
+    public void nextQuestion(){
         //l’index de la question en cour: nextIndex
         Integer nextIndex = currentQuestionsIndex +1;
         //Vérifie si nextIndex dépasse la taille de la liste de questions
@@ -61,7 +61,7 @@ public class QuizViewModel  extends ViewModel {
         }
         //Si nextIndex est le dernier index
         else if (nextIndex == questions.size() -1){
-            isLastquestion.postValue(true);
+            isLastQuestion.postValue(true);
         }
         currentQuestionsIndex = nextIndex;
         currentQuestion.postValue(questions.get(currentQuestionsIndex));
